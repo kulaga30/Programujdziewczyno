@@ -1,11 +1,15 @@
-console.log("działa");
-var myName ="Agata";
-console.log("myName:", myName);
-var girls = ["Gosia","Ewelina","Agata"];
-console.log(girls[1]);
-girls[0]="Ala";
-console.log(girls);
-var Number1 = 30;
-var Number2 = 20;
-if(Number1>Number2){console.log("hurra")}else{console.log("bum")};
-for(var i=0;i<=girls.length-1;i++){console.log(girls[i])};
+'use strict';
+document.addEventListener('DOMContentLoaded', function() {console.log("działa")
+var elementWithDropdown = document.querySelector('.for-dropdown');    
+console.log(elementWithDropdown);
+var dropdown = document.querySelector('.dropdown');
+console.log(dropdown)
+elementWithDropdown.addEventListener('mouseover',function(){
+console.log("myszka jest tu");
+dropdown.style.display = "block";
+});
+elementWithDropdown.addEventListener('mouseout',function(){
+console.log("myszki już tu nie ma");
+dropdown.style.display = "none";
+});
+});
